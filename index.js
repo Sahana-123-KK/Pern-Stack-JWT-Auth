@@ -9,6 +9,7 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/auth",require("./routes/jwtauth"))
+app.use("/dashboard",require("./routes/dashboard"))
 app.listen(8000,()=>{
     console.log("Connected To JWT Backend in PORT 8000...")
 })
